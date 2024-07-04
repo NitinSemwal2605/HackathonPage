@@ -10,6 +10,7 @@
   overflow: hidden;
   flex-shrink: 0;
   object-fit: cover;
+  z-index: 1;
 }
 .desktop-3-child,
 .desktop-3-item {
@@ -29,6 +30,7 @@
 }
 .desktop-3-inner {
   left: 628.8px;
+  margin-left: 210px;
   z-index: 5;
 }
 .desktop-3-child1,
@@ -40,6 +42,7 @@
   position: absolute;
   margin: 0 !important;
   top: 1136px;
+  z-index: 1;
 }
 .polygon-icon {
   border: 0;
@@ -155,14 +158,6 @@
   align-items: flex-start;
   justify-content: center;
   padding: 0 var(--padding-4xl) 0 var(--padding-xl);
-}
-.file-2-icon {
-  height: 833px;
-  width: 667px;
-  position: relative;
-  object-fit: cover;
-  display: none;
-  max-width: 100%;
 }
 .register-now1 {
   margin: 0;
@@ -776,6 +771,7 @@
   width: 295.5px;
   position: relative;
   font-size: inherit;
+  margin-left: -125px;
   font-weight: 500;
   font-family: inherit;
   display: inline-block;
@@ -807,6 +803,7 @@
   height: 57.1px;
   width: 83.7px;
   position: relative;
+  margin-left: auto;  /* nahi hua */
   font-size: inherit;
   font-weight: 500;
   font-family: inherit;
@@ -840,6 +837,7 @@
   width: 202px;
   position: relative;
   font-size: inherit;
+  margin-left: -80px;
   font-weight: 500;
   font-family: inherit;
   display: inline-block;
@@ -1008,10 +1006,9 @@
 .apple-1-1-group,
 .frame-group {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-98xl);
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensures even spacing between items */
+  gap: 56px; 
 }
 .frame-group {
   align-self: stretch;
@@ -1430,6 +1427,8 @@
     min-width: 100%;
   }
   .partners-content {
+    display: flex;
+    flex-wrap: wrap;
     gap: 56px;
   }
   .partners-content-wrapper {
